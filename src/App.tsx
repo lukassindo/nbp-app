@@ -15,19 +15,15 @@ const App = () => {
       setInterval(async()=> {
         const data = await getData();
         setCurrency(data);
-        console.log(data);
       },300000)
       setCurrency(data);
     }
     getCurrency();
-    console.log('useEffect');
   }, []);
   
  
   const data = useMemo(
     () => {
-      console.log(currency);
-      console.log('useMemo');
       return [
       {
         label: 'PLN',
@@ -50,10 +46,6 @@ const App = () => {
     []
   )
 
-  
-
-  
-  console.log('render')
   return ( 
     
     <div className="App">
