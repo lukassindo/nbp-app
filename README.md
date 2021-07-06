@@ -1,3 +1,6 @@
+Simple React App with Typescript and React Charts library showing polish currency rates from NBP API (refreshing every 5 min)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
