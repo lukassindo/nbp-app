@@ -1,7 +1,7 @@
 type Item = {
     effectiveDate: string,
-    mid: string,
-    no: string,
+    mid: number,
 }
+
 
 export type {Item}
