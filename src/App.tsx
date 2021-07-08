@@ -1,9 +1,8 @@
 import React, {useEffect, useState, useMemo} from 'react';
 import './App.css';
 import getData from './services/nbp';
-import {Item} from './models';
 import { Chart } from 'react-charts';
-
+import Box from './components/Box'
 
 const App = () => {   
   const [currency, setCurrency] = useState<[string, number][]>([]);
@@ -32,6 +31,9 @@ const App = () => {
     ]},
     [currency]
   )
+
+
+
   const series = useMemo(
     () => ({
       type: 'bar'
@@ -55,9 +57,9 @@ const App = () => {
       </header>
       <main>
         <div className="chart-container">
-        <div style={{height: '300px', width: '575px'}}>
+        <Box className="dataBox">
         <Chart data={data} axes={axes} series={series} tooltip/>
-        </div>
+        </Box>
         </div>
       </main>
     </div>

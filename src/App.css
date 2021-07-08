@@ -4,14 +4,13 @@
   background-size: cover;
   height: 100vh;
   max-height: 100vh;
+
 }
 main {
   display: flex;
   justify-content: center;
 }
 .chart-container {
-  width: 600px;
-  height: 301px;
   background: #fff;
   padding: 31px;
 }
